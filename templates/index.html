@@ -1,0 +1,15 @@
+{% block content %}
+<div style="text-align: center;">
+    <h1 style="font-size: 2rem;">Bienvenido a la app de restaurantes Amore mio</h1>
+    <p style="font-size: 1.5rem;">Cada mes, hay un día especial donde vamos a cenar con Noe, y esta app nos ayuda a elegir un restaurante al azar dentro de varios que hay en una lista.</p>
+    <p style="font-size: 1.2em;">Espera unos segundos y te mostramos cuál restaurante toca esta vez! 😁😁😁💕</p>
+</div>
+<script>
+    function elegir() {
+        setTimeout(function() {
+            window.location.href = "/elegir";
+        }, 6000);
+    }
+    window.onload = elegir;
+</script>
+{% endblock %}

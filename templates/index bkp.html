@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>App de restaurantes</title>
+</head>
+<body>
+    <h1>Bienvenido a la app de restaurantes Amore mio</h1>
+    <p>Cada mes, hay un día especial donde vamos a cenar con Noe, y esta app nos ayuda a elegir un restaurante al azar dentro de varios que hay en una lista.</p>
+    <p>Espera unos segundos y te mostramos cual restaurante toca esta vez! 😁😁😁💕</p>
+    <script>
+        // Función para redirigir a la ruta /elegir después de 3 segundos
+        function elegir() {
+            setTimeout(function() {
+                window.location.href = "/elegir";
+            }, 6000);
+        }
+        // Llamar a la función cuando se carga la página
+        window.onload = elegir;
+    </script>
+</body>
+</html>
